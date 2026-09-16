@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jobs & Internships - CareerConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="dashboard-logo">
+                Career<span>Connect</span>
+            </div>
+
+            <nav class="dashboard-nav">
+
+                <a href="dashboard.html">📊 Dashboard</a>
+
+                <a href="profile.html">👤 My Profile</a>
+
+                <a href="jobs.html" class="active">
+                    💼 Jobs & Internships
+                </a>
+
+                <a href="resume.html">📄 Resume</a>
+
+                <a href="career.html">🎯 Career Guidance</a>
+
+                <a href="#">🤖 AI Recommendations</a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="#">⚙️ Settings</a>
+                <a href="index.html">🚪 Logout</a>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+
+            <div class="dashboard-header">
+
+                <div>
+                    <h1>Jobs & Internships 💼</h1>
+
+                    <p>
+                        Find opportunities that match your skills and career goals.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Search -->
+            <div class="job-search">
+
+                <input
+                    type="text"
+                    id="jobSearch"
+                    placeholder="Search jobs, skills or companies..."
+                >
+
+                <select id="jobType">
+
+                    <option value="all">All Opportunities</option>
+
+                    <option value="internship">Internship</option>
+
+                    <option value="fulltime">Full Time</option>
+
+                </select>
+
+                <button onclick="searchJobs()">
+                    Search
+                </button>
+
+            </div>
+
+
+            <!-- Jobs -->
+            <section class="job-cards" id="jobCards">
+
+
+                <div class="job-card">
+
+                    <div class="job-card-top">
+
+                        <div class="company-logo">
+                            J
+                        </div>
+
+                        <div>
+                            <h2>Java Developer Intern</h2>
+
+                            <p>Tech Solutions</p>
+                        </div>
+
+                    </div>
+
+                    <div class="job-details">
+
+                        <span>📍 Pune</span>
+
+                        <span>💼 Internship</span>
+
+                        <span>☕ Java</span>
+
+                    </div>
+
+                    <p class="job-description">
+                        Work on Java applications and learn backend development
+                        while working with an experienced development team.
+                    </p>
+
+                    <button class="apply-button">
+                        Apply Now
+                    </button>
+
+                </div>
+
+
+                <div class="job-card">
+
+                    <div class="job-card-top">
+
+                        <div class="company-logo">
+                            F
+                        </div>
+
+                        <div>
+                            <h2>Frontend Developer Intern</h2>
+
+                            <p>Future Tech</p>
+                        </div>
+
+                    </div>
+
+                    <div class="job-details">
+
+                        <span>📍 Mumbai</span>
+
+                        <span>💼 Internship</span>
+
+                        <span>🌐 HTML/CSS/JS</span>
+
+                    </div>
+
+                    <p class="job-description">
+                        Build responsive websites and modern user interfaces
+                        using frontend technologies.
+                    </p>
+
+                    <button class="apply-button">
+                        Apply Now
+                    </button>
+
+                </div>
+
+
+                <div class="job-card">
+
+                    <div class="job-card-top">
+
+                        <div class="company-logo">
+                            S
+                        </div>
+
+                        <div>
+                            <h2>Software Engineer</h2>
+
+                            <p>Smart Technologies</p>
+                        </div>
+
+                    </div>
+
+                    <div class="job-details">
+
+                        <span>📍 Bangalore</span>
+
+                        <span>💼 Full Time</span>
+
+                        <span>💻 Software Development</span>
+
+                    </div>
+
+                    <p class="job-description">
+                        Join a software engineering team and contribute to
+                        real-world technology projects.
+                    </p>
+
+                    <button class="apply-button">
+                        Apply Now
+                    </button>
+
+                </div>
+
+
+                <div class="job-card">
+
+                    <div class="job-card-top">
+
+                        <div class="company-logo">
+                            A
+                        </div>
+
+                        <div>
+                            <h2>AI Developer Intern</h2>
+
+                            <p>AI Innovations</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="job-details">
+
+                        <span>📍 Hyderabad</span>
+
+                        <span>💼 Internship</span>
+
+                        <span>🤖 Artificial Intelligence</span>
+
+                    </div>
+
+                    <p class="job-description">
+                        Work with AI technologies and develop intelligent
+                        applications under expert guidance.
+                    </p>
+
+                    <button class="apply-button">
+                        Apply Now
+                    </button>
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

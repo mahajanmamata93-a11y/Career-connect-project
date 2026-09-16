@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile - CareerConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="dashboard-logo">
+                Career<span>Connect</span>
+            </div>
+
+            <nav class="dashboard-nav">
+
+                <a href="dashboard.html">📊 Dashboard</a>
+
+                <a href="profile.html" class="active">
+                    👤 My Profile
+                </a>
+
+                <a href="jobs.html">💼 Jobs</a>
+
+                <a href="resume.html">📄 Resume</a>
+
+                <a href="career.html">🎯 Career Guidance</a>
+
+                <a href="#">🤖 AI Recommendations</a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+
+                <a href="#">⚙️ Settings</a>
+
+                <a href="index.html">🚪 Logout</a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+
+            <div class="dashboard-header">
+
+                <div>
+                    <h1>My Profile 👤</h1>
+
+                    <p>
+                        Manage your personal and professional information.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Profile Card -->
+            <section class="profile-card">
+
+                <div class="profile-top">
+
+                    <div class="large-profile-circle">
+                        M
+                    </div>
+
+                    <div>
+
+                        <h2>Mamata Mahajan</h2>
+
+                        <p>
+                            Computer Engineering Student
+                        </p>
+
+                        <span class="profile-status">
+                            Profile Active
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Personal Information -->
+
+                <div class="profile-section">
+
+                    <h2>Personal Information</h2>
+
+                    <div class="profile-grid">
+
+                        <div class="profile-field">
+
+                            <label>Full Name</label>
+
+                            <input
+                                type="text"
+                                value="Mamata Mahajan"
+                            >
+
+                        </div>
+
+
+                        <div class="profile-field">
+
+                            <label>Email</label>
+
+                            <input
+                                type="email"
+                                value="student@example.com"
+                            >
+
+                        </div>
+
+
+                        <div class="profile-field">
+
+                            <label>Phone Number</label>
+
+                            <input
+                                type="tel"
+                                value="9876543210"
+                            >
+
+                        </div>
+
+
+                        <div class="profile-field">
+
+                            <label>Course</label>
+
+                            <input
+                                type="text"
+                                value="Computer Engineering"
+                            >
+
+                        </div>
+
+
+                        <div class="profile-field">
+
+                            <label>College</label>
+
+                            <input
+                                type="text"
+                                placeholder="Enter your college"
+                            >
+
+                        </div>
+
+
+                        <div class="profile-field">
+
+                            <label>CGPA</label>
+
+                            <input
+                                type="number"
+                                step="0.01"
+                                placeholder="Enter your CGPA"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Skills -->
+
+                <div class="profile-section">
+
+                    <h2>Technical Skills</h2>
+
+                    <div class="skills-container">
+
+                        <span class="skill">Java</span>
+
+                        <span class="skill">HTML</span>
+
+                        <span class="skill">CSS</span>
+
+                        <span class="skill">JavaScript</span>
+
+                        <span class="skill">SQL</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- About -->
+
+                <div class="profile-section">
+
+                    <h2>About Me</h2>
+
+                    <textarea
+                        rows="5"
+                        placeholder="Write something about yourself..."
+                    ></textarea>
+
+                </div>
+
+
+                <button class="save-profile">
+                    Save Profile
+                </button>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Career Guidance - CareerConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="dashboard-logo">
+                Career<span>Connect</span>
+            </div>
+
+            <nav class="dashboard-nav">
+
+                <a href="dashboard.html">📊 Dashboard</a>
+
+                <a href="profile.html">👤 My Profile</a>
+
+                <a href="jobs.html">💼 Jobs & Internships</a>
+
+                <a href="resume.html">📄 Resume</a>
+
+                <a href="career.html" class="active">
+                    🎯 Career Guidance
+                </a>
+
+                <a href="#">🤖 AI Recommendations</a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="#">⚙️ Settings</a>
+                <a href="index.html">🚪 Logout</a>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+
+            <div class="dashboard-header">
+
+                <div>
+                    <h1>Career Guidance 🎯</h1>
+
+                    <p>
+                        Discover career paths based on your interests and skills.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Assessment -->
+
+            <section class="career-assessment">
+
+                <h2>Find Your Career Path</h2>
+
+                <p class="assessment-text">
+                    Answer a few questions and we'll suggest suitable career
+                    options for you.
+                </p>
+
+
+                <div class="question">
+
+                    <label>
+                        1. Which area interests you the most?
+                    </label>
+
+                    <select id="interest">
+
+                        <option value="">
+                            Select an option
+                        </option>
+
+                        <option value="development">
+                            Software Development
+                        </option>
+
+                        <option value="ai">
+                            Artificial Intelligence
+                        </option>
+
+                        <option value="data">
+                            Data Science
+                        </option>
+
+                        <option value="web">
+                            Web Development
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="question">
+
+                    <label>
+                        2. Which skill do you enjoy?
+                    </label>
+
+                    <select id="skill">
+
+                        <option value="">
+                            Select an option
+                        </option>
+
+                        <option value="java">
+                            Java
+                        </option>
+
+                        <option value="javascript">
+                            JavaScript
+                        </option>
+
+                        <option value="python">
+                            Python
+                        </option>
+
+                        <option value="sql">
+                            SQL & Databases
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="question">
+
+                    <label>
+                        3. What type of work do you prefer?
+                    </label>
+
+                    <select id="work">
+
+                        <option value="">
+                            Select an option
+                        </option>
+
+                        <option value="coding">
+                            Coding & Software Development
+                        </option>
+
+                        <option value="analysis">
+                            Data Analysis
+                        </option>
+
+                        <option value="research">
+                            Research & AI
+                        </option>
+
+                        <option value="design">
+                            Website & UI Development
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    class="career-button"
+                    onclick="getCareerRecommendation()"
+                >
+                    Get Career Recommendation
+                </button>
+
+            </section>
+
+
+            <!-- Recommendation -->
+
+            <section
+                class="career-result"
+                id="careerResult"
+            >
+
+                <div class="result-icon">
+                    🎯
+                </div>
+
+                <h2>Your Recommended Career</h2>
+
+                <h3 id="careerTitle">
+                    Complete the assessment
+                </h3>
+
+                <p id="careerDescription">
+                    Answer the questions above to receive a career recommendation.
+                </p>
+
+            </section>
+
+
+            <!-- Career Options -->
+
+            <section class="career-options">
+
+                <h2>Popular Career Paths</h2>
+
+                <div class="career-cards">
+
+                    <div class="career-card">
+
+                        <div class="career-icon">
+                            ☕
+                        </div>
+
+                        <h3>Java Full Stack Developer</h3>
+
+                        <p>
+                            Build web applications using Java, Spring Boot,
+                            databases and frontend technologies.
+                        </p>
+
+                    </div>
+
+
+                    <div class="career-card">
+
+                        <div class="career-icon">
+                            🤖
+                        </div>
+
+                        <h3>AI Engineer</h3>
+
+                        <p>
+                            Develop intelligent applications using machine
+                            learning and artificial intelligence.
+                        </p>
+
+                    </div>
+
+
+                    <div class="career-card">
+
+                        <div class="career-icon">
+                            📊
+                        </div>
+
+                        <h3>Data Scientist</h3>
+
+                        <p>
+                            Analyze data and build models to solve
+                            real-world problems.
+                        </p>
+
+                    </div>
+
+
+                    <div class="career-card">
+
+                        <div class="career-icon">
+                            🌐
+                        </div>
+
+                        <h3>Web Developer</h3>
+
+                        <p>
+                            Create modern and responsive websites and
+                            web applications.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

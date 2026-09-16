@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard - CareerConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="dashboard-logo">
+                Career<span>Connect</span>
+            </div>
+
+            <nav class="dashboard-nav">
+
+                <a href="#" class="active">📊 Dashboard</a>
+                <a href="profile.html">👤 My Profile</a>
+                <a href="jobs.html">💼 Jobs</a>
+                <a href="resume.html">📄 Resume</a>
+                <a href="career.html">🎯 Career Guidance</a>
+                <a href="#">🤖 AI Recommendations</a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="#">⚙️ Settings</a>
+                <a href="index.html">🚪 Logout</a>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+
+            <!-- Top Bar -->
+            <div class="dashboard-header">
+
+                <div>
+                    <h1>Welcome Back! 👋</h1>
+                    <p>Here's an overview of your career journey.</p>
+                </div>
+
+                <div class="student-profile">
+                    <div class="profile-circle">M</div>
+
+                    <div>
+                        <strong>Student</strong>
+                        <small>Computer Engineering</small>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Statistics -->
+            <section class="stats">
+
+                <div class="stat-card">
+                    <div class="stat-icon">💼</div>
+
+                    <div>
+                        <h3>12</h3>
+                        <p>Jobs Available</p>
+                    </div>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-icon">📄</div>
+
+                    <div>
+                        <h3>3</h3>
+                        <p>Applications</p>
+                    </div>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+
+                    <div>
+                        <h3>75%</h3>
+                        <p>Profile Complete</p>
+                    </div>
+                </div>
+
+
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+
+                    <div>
+                        <h3>8</h3>
+                        <p>Skills Added</p>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- Dashboard Grid -->
+            <section class="dashboard-grid">
+
+                <!-- Profile Progress -->
+                <div class="dashboard-card">
+
+                    <div class="card-header">
+                        <h2>Profile Completion</h2>
+                        <span>75%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+
+                    <p class="card-description">
+                        Complete your profile to get better job recommendations.
+                    </p>
+
+                    <button class="dashboard-button">
+                        Complete Profile
+                    </button>
+
+                </div>
+
+
+                <!-- Career Recommendation -->
+                <div class="dashboard-card">
+
+                    <div class="card-header">
+                        <h2>Career Recommendation</h2>
+                        <span>🎯</span>
+                    </div>
+
+                    <h3 class="career-title">
+                        Java Full Stack Developer
+                    </h3>
+
+                    <p class="card-description">
+                        Based on your current skills and interests, this career
+                        path could be a good match for you.
+                    </p>
+
+                    <button class="dashboard-button">
+                        Explore Career
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- Recommended Jobs -->
+            <section class="dashboard-card jobs-card">
+
+                <div class="card-header">
+
+                    <h2>Recommended Jobs</h2>
+
+                    <a href="#">View All</a>
+
+                </div>
+
+
+                <div class="job-list">
+
+                    <div class="job-item">
+
+                        <div>
+                            <h3>Java Developer Intern</h3>
+                            <p>Software Company • Pune</p>
+                        </div>
+
+                        <button class="apply-button">
+                            Apply
+                        </button>
+
+                    </div>
+
+
+                    <div class="job-item">
+
+                        <div>
+                            <h3>Frontend Developer Intern</h3>
+                            <p>Tech Solutions • Mumbai</p>
+                        </div>
+
+                        <button class="apply-button">
+                            Apply
+                        </button>
+
+                    </div>
+
+
+                    <div class="job-item">
+
+                        <div>
+                            <h3>Software Engineer Intern</h3>
+                            <p>IT Company • Bangalore</p>
+                        </div>
+
+                        <button class="apply-button">
+                            Apply
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

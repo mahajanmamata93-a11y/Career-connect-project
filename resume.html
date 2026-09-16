@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resume Builder - CareerConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="dashboard-logo">
+                Career<span>Connect</span>
+            </div>
+
+            <nav class="dashboard-nav">
+
+                <a href="dashboard.html">📊 Dashboard</a>
+
+                <a href="profile.html">👤 My Profile</a>
+
+                <a href="jobs.html">💼 Jobs & Internships</a>
+
+                <a href="resume.html" class="active">
+                    📄 Resume
+                </a>
+
+                <a href="career.html">🎯 Career Guidance</a>
+
+                <a href="#">🤖 AI Recommendations</a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="#">⚙️ Settings</a>
+                <a href="index.html">🚪 Logout</a>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+
+            <div class="dashboard-header">
+
+                <div>
+                    <h1>Resume Builder 📄</h1>
+
+                    <p>
+                        Create a professional resume for your job applications.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="resume-layout">
+
+                <!-- Resume Form -->
+                <section class="resume-form">
+
+                    <h2>Enter Your Information</h2>
+
+                    <div class="resume-group">
+
+                        <label>Full Name</label>
+
+                        <input
+                            type="text"
+                            id="resumeName"
+                            placeholder="Your full name"
+                        >
+
+                    </div>
+
+
+                    <div class="resume-group">
+
+                        <label>Email</label>
+
+                        <input
+                            type="email"
+                            id="resumeEmail"
+                            placeholder="your@email.com"
+                        >
+
+                    </div>
+
+
+                    <div class="resume-group">
+
+                        <label>Phone</label>
+
+                        <input
+                            type="tel"
+                            id="resumePhone"
+                            placeholder="Your phone number"
+                        >
+
+                    </div>
+
+
+                    <div class="resume-group">
+
+                        <label>Career Objective</label>
+
+                        <textarea
+                            id="resumeObjective"
+                            rows="4"
+                            placeholder="Write your career objective..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="resume-group">
+
+                        <label>Education</label>
+
+                        <textarea
+                            id="resumeEducation"
+                            rows="4"
+                            placeholder="Example: BE Computer Engineering - XYZ College"
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="resume-group">
+
+                        <label>Technical Skills</label>
+
+                        <input
+                            type="text"
+                            id="resumeSkills"
+                            placeholder="Java, HTML, CSS, JavaScript, SQL"
+                        >
+
+                    </div>
+
+
+                    <div class="resume-group">
+
+                        <label>Projects</label>
+
+                        <textarea
+                            id="resumeProjects"
+                            rows="4"
+                            placeholder="Describe your projects..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="resume-group">
+
+                        <label>Certifications</label>
+
+                        <textarea
+                            id="resumeCertifications"
+                            rows="3"
+                            placeholder="Enter your certifications..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        class="dashboard-button"
+                        onclick="generateResume()"
+                    >
+                        Generate Resume
+                    </button>
+
+                </section>
+
+
+                <!-- Resume Preview -->
+                <section class="resume-preview">
+
+                    <div class="resume-paper">
+
+                        <h1 id="previewName">
+                            Your Name
+                        </h1>
+
+                        <p id="previewContact">
+                            email@example.com | +91 XXXXX XXXXX
+                        </p>
+
+
+                        <hr>
+
+
+                        <h2>Career Objective</h2>
+
+                        <p id="previewObjective">
+                            Your career objective will appear here.
+                        </p>
+
+
+                        <h2>Education</h2>
+
+                        <p id="previewEducation">
+                            Your education details will appear here.
+                        </p>
+
+
+                        <h2>Technical Skills</h2>
+
+                        <p id="previewSkills">
+                            Your skills will appear here.
+                        </p>
+
+
+                        <h2>Projects</h2>
+
+                        <p id="previewProjects">
+                            Your projects will appear here.
+                        </p>
+
+
+                        <h2>Certifications</h2>
+
+                        <p id="previewCertifications">
+                            Your certifications will appear here.
+                        </p>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
